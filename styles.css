@@ -1,5 +1,36 @@
 /* Base Styles */
 
+.background {
+    background: radial-gradient(circle at 50% 10%, #0a1a2f 0%, #020617 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-pattern {
+    background-image: url('circuit-mesh.png');
+    opacity: 0.15;
+    animation: flow 30s linear infinite;
+}
+
+.globe-container {
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 15px rgba(100, 200, 255, 0.3));
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.particles {
+    animation: rise 20s infinite linear;
+    background-image: url('data:image/svg+xml,...');
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
